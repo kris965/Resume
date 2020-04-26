@@ -64,7 +64,7 @@
                         <h3 class="section-heading uppercase">Conferences and Meetups attended</h3>
                     </div>
                 </div>
-                <div id="mapid"></div>
+                <div id="map"></div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 bg-color-groups section-column">
                 <div class="row">
@@ -166,17 +166,7 @@
             </div>
         </div>
     </footer>
-    <script>
-    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1Ijoia3Jpczk2NSIsImEiOiJjazllY296OTYwMHF3M25yemxyZ2Zudm94In0.dB8AiAaqTkDrqXpmL7e-Tw'
-}).addTo(mymap);
-    </script>
+    <script src="assets/js/maps.js"></script>
 </body>
 
 </html>
